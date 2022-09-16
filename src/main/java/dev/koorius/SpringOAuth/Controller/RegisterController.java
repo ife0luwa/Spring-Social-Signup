@@ -26,7 +26,7 @@ public class RegisterController {
 //        System.out.println(userDTO);
 //        userService.createUser(userDTO);
 
-        return "Google user successfully logged";
+        return "Google user successfully";
     }
 
 
