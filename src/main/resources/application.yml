@@ -1,0 +1,35 @@
+server:
+    port: 8080
+spring:
+    datasource:
+        password: if30luwa
+        url: jdbc:postgresql://localhost:5432/RYTPodD
+        username: postgres
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+        hibernate:
+            ddl-auto: update
+            naming:
+                implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+#                physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        properties:
+            hibernate:
+                format_sql: true
+        show-sql: false
+
+    security:
+        oauth2:
+            client:
+                registration:
+                    google:
+                        client-id: 863447978684-l3ls52esmac6jo9ec023t9ainhbk3mgr.apps.googleusercontent.com
+                        client-secret: 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
+                        scope: email,profile
+
+
+
+
+
+
+
+
